@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: news
+name: News
+propagationMethod: all
+siteSettings:
+  e52a3d5a-c741-4dc5-bfe4-d1a6c9049cb5: # alex-craftkit-project
+    enabledByDefault: true
+    hasUrls: true
+    template: news/_entry
+    uriFormat: 'news/{slug}'
+type: channel

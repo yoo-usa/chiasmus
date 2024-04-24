@@ -1,0 +1,19 @@
+columnSuffix: uleuodyj
+contentColumnType: text
+fieldGroup: b511ce47-b1be-429f-b371-5005d5a7eb45 # News
+handle: writer
+instructions: 'This is the author of the News Page'
+name: Writer
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

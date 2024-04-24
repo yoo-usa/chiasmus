@@ -1,0 +1,25 @@
+@use "sass:map";
+@use "../helpers/mixins";
+
+.drink-content {
+  display: flex;
+  flex-direction: column;
+
+  @include mixins.content-grid-content-block;
+
+  &__introduction {
+    font-size: 2rem;
+    padding: 0 3rem;
+  }
+
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__button {
+    text-decoration: none;
+    color: white;
+  }
+}

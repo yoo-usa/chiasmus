@@ -1,0 +1,71 @@
+fieldLayouts:
+  3442d816-760a-42bb-b3d1-abaa94eb866c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: cf1409c3-d1f1-43ff-8eb8-e8efa57b3c6c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bc99dda4-f230-4723-ba73-4a6b21bf3b73 # Recipe Contents
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 131d1940-11df-4f9f-aaff-1dbaf535e913
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1c0d27a8-0214-4e5e-b5bf-056229bec07a # Drink Style
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3121aced-8e63-4418-929d-1243c4673579
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c8aa4689-1c3b-4763-ab66-93357eee4351
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: e594e887-3561-4d97-bd94-7a9fa33edb04 # Recipes
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

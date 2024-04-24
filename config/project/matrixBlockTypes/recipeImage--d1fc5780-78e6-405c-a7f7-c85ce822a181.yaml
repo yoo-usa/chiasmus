@@ -1,0 +1,95 @@
+field: bc99dda4-f230-4723-ba73-4a6b21bf3b73 # Recipe Contents
+fieldLayouts:
+  c14437e3-42c1-4163-8c54-f2c10194dc0b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c6574eee-5452-4b59-8736-69ce0d556df4 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 852f8191-1220-4314-a395-10fd32a70060
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 58b93e3f-af7b-4c45-98af-80f323172f96 # Image Caption
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ca03f47d-e480-463b-b5fa-460c42803ce9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dfb82df9-857e-474d-afb9-4463316708c4
+        userCondition: null
+fields:
+  58b93e3f-af7b-4c45-98af-80f323172f96: # Image Caption
+    columnSuffix: bvbocmfh
+    contentColumnType: text
+    fieldGroup: null
+    handle: imageCaption
+    instructions: null
+    name: 'Image Caption'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c6574eee-5452-4b59-8736-69ce0d556df4: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: null
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:28b36b86-72f6-4b2c-a601-19815bd2f0e9' # Drinks
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:28b36b86-72f6-4b2c-a601-19815bd2f0e9' # Drinks
+      restrictedLocationSubpath: null
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: recipeImage
+name: 'Recipe Image'
+sortOrder: 3

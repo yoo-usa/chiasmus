@@ -1,0 +1,20 @@
+columnSuffix: yimzmzab
+contentColumnType: smallint(3)
+fieldGroup: a44e5ac3-c8e7-4152-9c69-8d62cdcde787 # About Crafty Coffee
+handle: imageQuality
+instructions: null
+name: 'Image Quality'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: 80
+  max: 100
+  min: 1
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

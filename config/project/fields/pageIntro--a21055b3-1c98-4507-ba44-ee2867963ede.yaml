@@ -1,0 +1,19 @@
+columnSuffix: zwovcpfd
+contentColumnType: text
+fieldGroup: a44e5ac3-c8e7-4152-9c69-8d62cdcde787 # About Crafty Coffee
+handle: pageIntro
+instructions: null
+name: 'Page Intro'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,7 @@
+{{ loadCssComponent('drink-content') }}
+{% if class is defined %}
+    <a class="button {{ class }}" href="{{ link }}">Make <i>{{ title }}</i> at Home</a>
+{% else %}
+    <a class="button" href="{{ link }}">Make <i>{{ title }}</i> at Home</a>
+{% endif %}
+

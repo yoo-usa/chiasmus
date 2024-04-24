@@ -1,0 +1,11 @@
+{% extends "_layouts/base.twig" %}
+
+{% block content %}
+    <div class="drinks-layout">
+        {% include "_components/drink-content.twig" with {
+            introduction: entry.introduction,
+            description: entry.pageCopy,
+            image: entry.drinkImage.one()
+        } %}
+    </div>
+{% endblock %}

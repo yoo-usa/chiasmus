@@ -1,0 +1,19 @@
+columnSuffix: wzpvnkzx
+contentColumnType: text
+fieldGroup: 29e446ac-2469-40bd-ab37-515ea72d24d1 # Common
+handle: subtitle
+instructions: null
+name: Subtitle
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

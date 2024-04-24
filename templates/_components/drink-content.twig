@@ -1,0 +1,24 @@
+{{ loadCssComponent('drink-content') }}
+{% from "@craft-components/img.twig" import img %}
+
+<div class="drink-content">
+    <div class="drink-content__introduction">
+        {{ introduction }}
+    </div>
+    {% set breakPoint = description|length / 2 %}
+    {% set partOne = description|slice(3, breakPoint) %}
+    {% set partTwo = description|slice(breakPoint, breakPoint-4) %}
+    <div class="drink-content__description">
+        {{ partOne }}
+    </div>
+    {{ img(image, null, null, 16/9, 'drink-content__image') }}
+    </div>
+    <div class="drink-content__description">
+        {{ partTwo }}
+    </div>
+    {% include "_components/button.twig" with {
+        link: entry.drinkRecipe.one().url,
+        title: entry.title,
+        class: "drink-content__button"
+    }%}
+</div>

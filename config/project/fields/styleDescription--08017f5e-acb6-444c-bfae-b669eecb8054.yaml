@@ -1,0 +1,19 @@
+columnSuffix: bvafljsa
+contentColumnType: text
+fieldGroup: 389fec98-5d8e-498c-acde-47dff8149620 # Drink Styles
+handle: styleDescription
+instructions: null
+name: 'Style Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

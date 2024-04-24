@@ -1,0 +1,83 @@
+fieldLayouts:
+  274508ed-3679-4ca5-a491-466f975fe2e1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: dfd1bc01-9963-4940-b553-9203f82a4ddc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f1170bf8-158f-4ac9-a56c-ce4956a03b20 # Writer
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6a54c01e-8c79-4ee5-b9d1-5b86c941530e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e74106f0-2b6a-4d6b-b3f9-b3956425511a # Excerpt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a45d2ca9-1520-49cf-9977-9c9eac1b7d76
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 56cb24e9-9490-4041-b9d0-cd66d05df7db # News Body
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7cab6040-0dc7-4643-a3ce-7f9fa55b51f8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 854abae4-5c51-4e09-8d39-7c31a6f5f653
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 3ad1ca16-929b-4a80-8c99-6b4060397459 # News
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

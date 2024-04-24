@@ -1,0 +1,107 @@
+fieldLayouts:
+  3fca8a06-6147-4151-800e-df9446400f7e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 6b119a11-8727-472e-9735-5e6dea3518ad
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0eebc6c7-2c2e-4125-9b71-083f11e1752f # Introduction
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8bfc5c06-cd85-4aee-82a2-2d09881f8f23
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 62f99a75-6423-46fc-88b4-9744492636ac # Page Copy
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5c11c90c-0683-4806-a98d-8fd46ca9a18b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f31ba73a-5791-434a-8bb7-e01852ecbf5f # Drink Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 507156c8-c62c-4b18-839f-fc5d6d0048bd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1c0d27a8-0214-4e5e-b5bf-056229bec07a # Drink Style
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f6601c46-5e12-4b6f-813e-37972dba6e27
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2d2c1d4f-b85a-42ad-9fbf-75ddaeb79052 # Drink Recipe
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 647d5855-f275-410d-b3ab-043b6f4d176d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 239e19fc-bd49-42a3-9099-75965c2702f3
+        userCondition: null
+handle: drink
+hasTitleField: true
+name: Drink
+section: ed6d4cf3-57d1-49c1-bcb6-76c31f219301 # Drinks
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

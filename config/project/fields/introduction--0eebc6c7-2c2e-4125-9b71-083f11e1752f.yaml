@@ -1,0 +1,19 @@
+columnSuffix: hmzxlxhz
+contentColumnType: text
+fieldGroup: d59d1159-2e3b-451f-9eed-941de1451f16 # Drinks
+handle: introduction
+instructions: null
+name: Introduction
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,69 @@
+field: bc99dda4-f230-4723-ba73-4a6b21bf3b73 # Recipe Contents
+fieldLayouts:
+  806b10a3-54c1-4efb-86a1-2f99d637f46f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0945c95a-991c-45a2-a334-783315082e98 # Body Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c77d700e-40c6-475e-9322-305b2d5ba77d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1553847f-3d78-4a9e-8be3-9a8920de703a
+        userCondition: null
+fields:
+  0945c95a-991c-45a2-a334-783315082e98: # Body Content
+    columnSuffix: hwialvlt
+    contentColumnType: string
+    fieldGroup: null
+    handle: bodyContent
+    instructions: null
+    name: 'Body Content'
+    searchable: false
+    settings:
+      errorMessage: 'Unable to find component class ''craft\ckeditor\Field''.'
+      expectedType: craft\ckeditor\Field
+      settings:
+        __assoc__:
+          0:
+            - availableTransforms
+            - ''
+          1:
+            - availableVolumes
+            - '*'
+          2:
+            - ckeConfig
+            - cde5ac79-3ee7-49b3-8aed-86673232cce4 # Simple
+          3:
+            - columnType
+            - text
+          5:
+            - enableSourceEditingForNonAdmins
+            - false
+          7:
+            - purifyHtml
+            - true
+          8:
+            - showUnpermittedFiles
+            - false
+          9:
+            - showUnpermittedVolumes
+            - false
+          10:
+            - showWordCount
+            - false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\MissingField
+handle: recipeCopy
+name: 'Recipe Copy'
+sortOrder: 2

@@ -1,0 +1,19 @@
+columnSuffix: pwtimeuj
+contentColumnType: text
+fieldGroup: b511ce47-b1be-429f-b371-5005d5a7eb45 # News
+handle: excerpt
+instructions: null
+name: Excerpt
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

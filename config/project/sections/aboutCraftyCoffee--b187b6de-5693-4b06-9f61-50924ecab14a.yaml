@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: aboutCraftyCoffee
+name: 'About Crafty Coffee'
+propagationMethod: all
+siteSettings:
+  e52a3d5a-c741-4dc5-bfe4-d1a6c9049cb5: # alex-craftkit-project
+    enabledByDefault: true
+    hasUrls: true
+    template: about/_entry
+    uriFormat: '{parent.url}/{slug}'
+structure:
+  maxLevels: null
+  uid: fc91f8f8-9d19-4629-a46f-f001af87cf61
+type: structure

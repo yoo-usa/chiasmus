@@ -1,0 +1,27 @@
+columnSuffix: lmypphsh
+contentColumnType: text
+fieldGroup: a44e5ac3-c8e7-4152-9c69-8d62cdcde787 # About Crafty Coffee
+handle: pageCopy
+instructions: null
+name: 'Page Copy'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field
