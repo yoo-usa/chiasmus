@@ -1,0 +1,22 @@
+@use "teaser-mixins";
+@use "../helpers/color";
+@use "../helpers/mixins";
+
+.teaser-card {
+  @include teaser-mixins.arrow(right);
+  @include teaser-mixins.set-teaser-item;
+
+  &__item {
+    padding: 2rem 2rem 3rem;
+    border: 1px solid color.get(primary, 200);
+  }
+
+  &__headline {
+    margin-bottom: 0.5rem;
+    hyphens: auto;
+  }
+
+  &__text {
+    color: color.get(primary, 600);
+  }
+}

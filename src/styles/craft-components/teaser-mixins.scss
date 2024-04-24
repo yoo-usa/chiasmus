@@ -1,0 +1,101 @@
+@use "sass:map";
+@use "sass:list";
+@use "sass:math";
+@use "../helpers/variables";
+@use "../helpers/color";
+@use "../helpers/space";
+@use "../helpers/mixins";
+
+@function min-height-by-grid-size($grid-size, $content-divisor: 2, $ratio: (16, 9), $gap: 0) {
+  $content-size: map.get(variables.$grid-breakpoints, $grid-size);
+  $padding-size: map.get(variables.$grid-padding, $grid-size) * 2;
+  $grid-size: map.get(variables.$grid-breakpoints, $grid-size);
+  $content-size: $content-size - $padding-size - $gap;
+  $ratio-w: list.nth($ratio, 1);
+  $ratio-h: list.nth($ratio, 2);
+  @return math.div($content-size, ($content-divisor * math.div($ratio-w, $ratio-h)));
+}
+
+@mixin arrow($position: left) {
+  .icon-arrow-extern-32,
+  .icon-arrow-right-32 {
+    position: absolute;
+    #{$position}: 2rem;
+    transition: color 300ms ease-out;
+  }
+}
+
+@mixin box-shadow-item {
+  transition: box-shadow 200ms ease-out;
+  box-shadow: 1px 2px 1rem rgba(color.$black, 0.1);
+}
+
+@mixin set-teaser-item($item-space: 0.5) {
+  height: 50%;
+  margin: 0 -#{$item-space}rem #{$item-space}rem;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -#{$item-space}rem;
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    min-height: calc(50vw - #{$item-space * 2}rem);
+    margin: #{$item-space}rem;
+    transition: all 200ms ease;
+    border-radius: 2px;
+    background-color: color.$white;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      @include mixins.media-include-media(">md") {
+        @include box-shadow-item;
+      }
+    }
+  }
+
+  @include mixins.media-include-media(">sm") {
+    &__item {
+      width: calc(50% - #{$item-space * 2}rem);
+      min-height: calc(25vw - #{$item-space * 2}rem);
+    }
+  }
+
+  @include mixins.media-include-media(">md") {
+    &__item {
+      $gap: space.set(2) * 1;
+
+      width: calc(50% - #{$item-space * 2}rem);
+      min-height: min-height-by-grid-size(xl, 3, (2, 1), $gap);
+    }
+  }
+
+  @include mixins.media-include-media(">lg") {
+    &__item {
+      $gap: space.set(2) * 2;
+
+      width: calc(100% / 3 - #{$item-space * 2}rem);
+      min-height: min-height-by-grid-size(xl, 3, (2, 1), $gap);
+    }
+  }
+
+  @include mixins.media-include-media(">xl") {
+    &__item {
+      $gap: space.set(2) * 2;
+
+      min-height: min-height-by-grid-size(xl, 3, (2, 1), $gap);
+    }
+  }
+
+  @include mixins.media-include-media(">xxl") {
+    &__item {
+      $gap: space.set(2) * 2;
+
+      min-height: min-height-by-grid-size(xxl, 3, (2, 1), $gap);
+    }
+  }
+}

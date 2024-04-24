@@ -1,0 +1,45 @@
+@use "teaser-mixins";
+@use "../helpers/color";
+@use "../helpers/mixins";
+
+.teaser-image-text-big {
+  $root: &;
+  @include teaser-mixins.set-teaser-item;
+
+  &__item {
+    margin: 1rem 0.5rem;
+    background-color: transparent;
+
+    &:hover {
+      @include mixins.media-include-media(">md") {
+        box-shadow: none;
+
+        #{$root}__img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    transform: scale(1);
+    transition: transform 2s ease-out;
+  }
+
+  &__img-scale-wrapper {
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    border: 1px solid color.get(primary, 200);
+  }
+
+  &__headline {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  &__text {
+    display: block;
+    color: color.get(primary, 600);
+  }
+}

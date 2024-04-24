@@ -1,0 +1,56 @@
+@use "../helpers/variables";
+@use "navbar-mixins";
+@use "../helpers/color";
+@use "../helpers/mixins";
+
+.navbar-second-level {
+  $root: &;
+
+  display: flex;
+  position: relative;
+  flex-flow: column nowrap;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+
+  &__group {
+    padding-right: 0;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 100ms ease, color 100ms ease, border 100ms ease;
+  }
+
+  &__header {
+    min-height: 2.4rem;
+  }
+
+  &__list {
+    padding-left: 0;
+    list-style-type: none;
+
+    &--button-style {
+      display: inline-block;
+    }
+  }
+
+  @include mixins.media-include-media(">md") {
+    &__link {
+      justify-content: flex-start;
+    }
+
+    &__item {
+      &--active {
+        background-color: transparent;
+      }
+
+      &--button-style {
+        padding: 0;
+        border: 0;
+      }
+    }
+  }
+}

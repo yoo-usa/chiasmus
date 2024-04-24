@@ -1,0 +1,202 @@
+@use "../helpers/color";
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "navbar-mixins";
+
+.navbar-first-level {
+  $root: &;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 1.5rem 0;
+  list-style-type: none;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 0;
+    border: 0;
+    background-color: transparent;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &__second-level-title {
+    padding: 2rem 0;
+    text-align: left;
+  }
+
+  &__link-overview {
+    display: inline-block;
+    border: 1px solid transparent;
+    text-decoration: none;
+  }
+
+  &__button-back {
+    grid-column: content-start;
+    padding: 1px;
+    border: 0;
+    cursor: pointer;
+
+    &::after {
+      bottom: 10px;
+    }
+  }
+
+  &__second-level-area-wrapper {
+    @include mixins.content-grid-wrapper(variables.$navbar-mobile-breakpoint);
+
+    width: 100%;
+    padding: 0;
+  }
+
+  &__second-level-content {
+    @include mixins.content-grid-content-block;
+
+    padding-top: var(--navbar-height);
+    text-align: right;
+  }
+
+  &__second-level-header {
+    @include mixins.content-grid-wrapper;
+
+    position: fixed;
+    z-index: variables.$z-index-content;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: var(--navbar-height);
+    background-color: color.$white;
+    box-shadow: variables.$navbar-header-shadow-mobile;
+
+    .navbar-burger {
+      grid-column: span 1 / content-end;
+    }
+  }
+
+  &__second-level-area {
+    --first-level-transition-duration: #{variables.$navbar-transition-duration};
+
+    position: absolute;
+    z-index: variables.$z-index-navbar + 1;
+    top: 0;
+    right: -100vw;
+    width: calc(100vw - var(--scrollbar-width));
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow-x: auto;
+    transition-property: right, max-height, opacity;
+    transition-duration: var(--first-level-transition-duration);
+    transition-timing-function: ease;
+    opacity: 0;
+    background-color: color.$white;
+
+    &--open {
+      display: block;
+      right: 0;
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @include mixins.media-include-media(">#{variables.$navbar-mobile-breakpoint}") {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+
+    &__button-back {
+      display: none;
+    }
+
+    &__item {
+      margin-right: 2.4rem;
+    }
+
+    &__second-level-title {
+      display: none;
+    }
+
+    &__button {
+      padding-right: 0;
+      padding-left: 0;
+      border: 0;
+
+      #{$root}__item:last-child & {
+        border-bottom: 0;
+      }
+
+      &::after {
+        bottom: 1.5rem;
+      }
+
+      &--active,
+      &:hover {
+        background-color: transparent;
+      }
+
+      .icon-chevron-right-8 {
+        display: none;
+      }
+    }
+
+    &__second-level-area {
+      display: none;
+      position: fixed;
+      z-index: auto;
+      top: unset;
+      right: unset;
+      left: unset;
+      width: auto;
+      min-height: auto;
+      max-height: 0;
+      padding-top: var(--navbar-first-level-height, auto);
+      overflow-x: hidden;
+      overflow-y: auto;
+      transition-property: max-height, opacity;
+      background-color: color.$white;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 15%);
+
+      &--after-open,
+      &--before-open {
+        display: block;
+        overflow-y: hidden;
+      }
+
+      &--open {
+        display: block;
+        max-height: calc(100vh - 300px);
+        overflow-y: auto;
+
+        .navbar--shrink & {
+          max-height: calc(100vh - 330px);
+        }
+      }
+
+      &--before-open#{$root}--open,
+      &--after-open#{$root}--open {
+        overflow-y: hidden;
+      }
+    }
+
+    &__second-level-content {
+      display: block;
+      padding: 0;
+      text-align: center;
+    }
+
+    &__second-level-header {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: auto;
+      padding-right: 4rem;
+      box-shadow: none;
+    }
+  }
+}

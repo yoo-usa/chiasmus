@@ -1,0 +1,27 @@
+@use "../helpers/mixins";
+
+html {
+  .redactor-dropdown .redactor-dropdown-item-custom2 {
+    display: none;
+  }
+
+  .redactor-box .redactor-styles.redactor-in {
+    @include mixins.richtext-set;
+
+    h3 .subheadline,
+    h4 .subheadline {
+      display: block;
+      margin-top: 0;
+      font-size: 70%;
+    }
+
+    blockquote {
+      margin-block-start: 1rem;
+      margin-block-end: 2rem;
+    }
+
+    @include mixins.richtext-buttons {
+      background-color: lightgrey;
+    }
+  }
+}

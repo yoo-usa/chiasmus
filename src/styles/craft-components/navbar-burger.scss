@@ -1,0 +1,73 @@
+@use "sass:math";
+@use "../helpers/color";
+@use "../helpers/variables";
+@use "../helpers/mixins";
+
+$ease: variables.$navbar-transition-duration ease-in-out;
+$bar-width: math.div(variables.$navbar-burger-size - (variables.$navbar-burger-padding * 2), 4);
+
+.navbar-burger {
+  $root: &;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: variables.$navbar-burger-size;
+  height: variables.$navbar-burger-size;
+  padding: 0 variables.$navbar-burger-padding;
+  transform-origin: center;
+  transition: all $ease;
+  border: 0;
+  border: 2px solid color.$transparent;
+  border-radius: calc(#{variables.$navbar-burger-size} * 0.5);
+  background-color: color.$transparent;
+  color: color.get(default, 100);
+  cursor: pointer;
+  gap: variables.$navbar-burger-space-between-bars;
+
+  &:hover,
+  &--active {
+    background-color: color.get(default, 300);
+  }
+
+  &__icon-bar {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: variables.$navbar-burger-bar-height;
+    transform-origin: center;
+    transition: all $ease;
+    border-radius: math.div(variables.$navbar-burger-space-between-bars, 2);
+    background-color: color.get(secondary, 500);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__sr-only {
+    @include mixins.wcag-sr-only;
+  }
+
+  .navbar--open & {
+    border-color: variables.$navbar-burger-border-color;
+    color: color.get(default, 200);
+    gap: 0;
+
+    #{$root}__icon-bar {
+      &:nth-child(2) {
+        transform: rotate(45deg) translate(variables.$navbar-burger-bar-height, 50%);
+      }
+
+      &:nth-child(3) {
+        width: 0;
+        opacity: 0;
+      }
+
+      &:nth-child(4) {
+        transform: rotate(-45deg) translate(variables.$navbar-burger-bar-height, -50%);
+      }
+    }
+  }
+}

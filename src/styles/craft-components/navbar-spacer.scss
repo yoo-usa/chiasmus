@@ -1,0 +1,8 @@
+@use "../helpers/variables";
+
+.navbar-spacer {
+  display: block;
+  grid-row: navbar-start / navbar-end;
+  height: var(--navbar-height);
+  transition: height #{variables.$navbar-transition-duration} ease-in-out;
+}

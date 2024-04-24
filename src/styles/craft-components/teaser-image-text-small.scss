@@ -1,0 +1,37 @@
+@use "teaser-mixins";
+@use "../helpers/color";
+@use "../helpers/mixins";
+
+.teaser-image-text-small {
+  $root: &;
+  @include teaser-mixins.arrow(right);
+  @include teaser-mixins.set-teaser-item;
+
+  &__item {
+    transition: background-color 300ms ease-out;
+    border: 1px solid color.get(primary, 200);
+  }
+
+  &__img {
+    display: block;
+    transform: scale(1);
+    transition: transform 2s ease-out;
+  }
+
+  &__img-scale-wrapper {
+    overflow: hidden;
+  }
+
+  &__headline {
+    display: block;
+    padding: 2rem 2rem 0.5rem;
+    transition: color 300ms ease-out;
+  }
+
+  &__text {
+    display: block;
+    padding: 0 2rem 3rem;
+    transition: color 300ms ease-out;
+    color: color.get(primary, 600);
+  }
+}

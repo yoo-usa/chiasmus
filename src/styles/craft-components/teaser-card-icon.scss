@@ -1,0 +1,114 @@
+@use "teaser-mixins";
+@use "../helpers/mixins";
+@use "../helpers/color";
+
+.teaser-card-icon {
+  $root: &;
+  @include teaser-mixins.arrow;
+  @include teaser-mixins.set-teaser-item;
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    transition: none;
+    transition: background-color 300ms ease-out;
+    border: 1px solid color.get(primary, 200);
+    background-image: url("/assets/images/bg-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: 40vw 0;
+    background-size: cover;
+
+    &:hover {
+      @include mixins.media-include-media(">md") {
+        color: color.$white;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: 0.5rem;
+
+    path {
+      transition: all 300ms ease-out;
+    }
+  }
+
+  &__headline {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    transition: color 300ms ease-out;
+  }
+
+  &__text {
+    display: inline-block;
+    padding-bottom: 2rem;
+    transition: color 300ms ease-out;
+  }
+
+  @include mixins.media-include-media(">sm") {
+    &__content {
+      width: 100%;
+    }
+
+    &__headline {
+      padding-right: 3.5rem;
+    }
+
+    &__img {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 5rem;
+      height: 5rem;
+    }
+
+    &__item {
+      background-position: 20vw 0;
+    }
+  }
+
+  @include mixins.media-include-media(">md") {
+    &__item {
+      background-position: 130px 0;
+    }
+  }
+
+  @include mixins.media-include-media(">lg") {
+    &__item {
+      background-position: 110px 0;
+    }
+  }
+
+  @include mixins.media-include-media(">xl") {
+    &__content {
+      width: 50%;
+    }
+
+    &__headline {
+      padding-right: 0;
+    }
+
+    &__img {
+      position: static;
+      top: auto;
+      right: auto;
+      width: 50%;
+      height: auto;
+    }
+
+    &__item {
+      background-position: 170px 0;
+    }
+  }
+}
