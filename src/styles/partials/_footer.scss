@@ -1,5 +1,21 @@
 .footer {
+  display: grid;
+  grid-template-areas: "location copyright about";
   grid-row: footer-start / footer-end;
-  height: 10rem;
-  background-color: palevioletred;
+  margin-top: 4rem;
+  background-color: black;
+  box-shadow: 0px 0px 0px 1rem #2c2c10;
+
+  &__location {
+    grid-area: location;
+  }
+
+  &__location-list {
+    list-style: none;
+    font-size: smaller;
+  }
+
+  &__location-element {
+    color: white;
+  }
 }
