@@ -1,0 +1,8 @@
+{{ loadCssComponent('preview-banner') }}
+
+{% from "@craft-components/img.twig" import img %}
+
+<div class="preview-banner" style="background-image: url('{{ img }}')">
+    <h1 class="preview-banner__title">{{ title }}</h1>
+    <p>{{ intro }}</p>
+</div>

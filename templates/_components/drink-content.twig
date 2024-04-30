@@ -1,10 +1,11 @@
 {{ loadCssComponent('drink-content') }}
+
 {% from "@craft-components/img.twig" import img %}
 
 <div class="drink-content">
-    <div class="drink-content__introduction">
-        {{ introduction }}
-    </div>
+    <p class="drink-content__introduction">
+        <i>{{ introduction }}</i>
+    </p>
     {% set breakPoint = description|length / 2 %}
     {% set partOne = description|slice(3, breakPoint) %}
     {% set partTwo = description|slice(breakPoint, breakPoint-4) %}

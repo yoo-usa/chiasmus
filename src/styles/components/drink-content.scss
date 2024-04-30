@@ -4,6 +4,8 @@
 
 .drinks-layout {
   @include mixins.content-grid-content-block;
+
+  padding-inline: 10rem;
 }
 
 .drink-content {
@@ -11,8 +13,10 @@
   flex-direction: column;
 
   &__introduction {
-    font-size: 2rem;
+    margin-inline: auto;
+    font-size: 1.5rem;
     padding: 0 3rem;
+    text-align: center;
   }
 
   &__image {
