@@ -1,4 +1,4 @@
-dateModified: 1713879372
+dateModified: 1714396078
 email:
   fromEmail: dev-test@yoo.digital
   fromName: alex-craftkit-project
@@ -24,7 +24,9 @@ meta:
     2d2c1d4f-b85a-42ad-9fbf-75ddaeb79052: 'Drink Recipe' # Drink Recipe
     3ad1ca16-929b-4a80-8c99-6b4060397459: News # News
     3f6cb7ef-41be-4cbf-9ed0-ab2bb69d5aed: Drink # Drink
+    3fe881b4-8fab-4a19-bd89-e3da8da552de: 'All Drinks' # All Drinks
     4eefd5ec-5b69-4e03-b47e-98bedb06c898: 'Tip Content' # Tip Content
+    7da5391e-c355-4735-9c88-f3ae06199c3e: 'All Drinks' # All Drinks
     25c23f10-9e6b-44df-a6d7-8a99ee9fceb6: alex-craftkit-project # alex-craftkit-project
     28b36b86-72f6-4b2c-a601-19815bd2f0e9: Drinks # Drinks
     29e446ac-2469-40bd-ab37-515ea72d24d1: Common # Common

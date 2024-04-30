@@ -1,0 +1,36 @@
+@use "sass:map";
+@use "../helpers/variables";
+@use "../helpers/color";
+@use "../helpers/mixins";
+
+.navbar {
+  &__desktop-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+    grid-column: padding-left-start/navbar-end !important;
+  }
+
+  &__desktop-title {
+      font-family: Pacifico, Helvetica, sans-serif;
+  }
+
+  &__desktop-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__desktop-list li {
+    padding: .75rem 1rem;
+    color: white;
+    background-color: rgb(64 64 64);
+  }
+
+  &__desktop-list li:hover {
+    background-color: rgb(32 32 32);
+  }
+}

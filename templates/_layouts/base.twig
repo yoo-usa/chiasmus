@@ -56,8 +56,6 @@
         } %}
     {% endblock %}
 
-    {% include "@craft-components/breadcrumbs.twig" %}
-
     {% set pageContentGrid = pageContentGrid|default('page-content-grid') %}
     {% set entryTypePrefix = entry.section.name|kebab ~ '-' ~ entry.type|kebab ~ '-' %}
     {% set areaLayoutName = pageContentGridArea|default(entryTypePrefix ~ pageContentGrid) ~ '-layout' %}

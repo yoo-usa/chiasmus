@@ -1,0 +1,59 @@
+fieldLayouts:
+  ae97c323-a728-4943-939d-a51b9c501d43:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ef9a43f3-2221-4e83-b231-a1b9a794737f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ae6395d0-c095-44f0-91b2-2ecf5d4bafb4 # Subtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 66a75b3d-b152-4291-a2bb-5fe895c6d850
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9e225e1e-7ce3-4a00-af54-2faabd76f3cc
+        userCondition: null
+handle: allDrinks
+hasTitleField: true
+name: 'All Drinks'
+section: 7da5391e-c355-4735-9c88-f3ae06199c3e # All Drinks
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

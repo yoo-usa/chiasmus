@@ -1,11 +1,14 @@
 @use "sass:map";
 @use "../helpers/mixins";
 
+
+.drinks-layout {
+  @include mixins.content-grid-content-block;
+}
+
 .drink-content {
   display: flex;
   flex-direction: column;
-
-  @include mixins.content-grid-content-block;
 
   &__introduction {
     font-size: 2rem;
