@@ -1,0 +1,48 @@
+@use "sass:map";
+@use "../helpers/mixins";
+
+.home-content {
+  @include mixins.content-grid-content-block;
+
+  display: grid;
+  grid-template-areas: "drinks news";
+  margin-top: 1rem;
+  padding-inline: 10rem;
+  gap: 1rem;
+
+  &__favorite {
+    grid-area: drinks;
+  }
+
+  &__favorite-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  &__favorite-banner:hover {
+    color: white;
+  }
+
+  &__subtitle {
+    color: black;
+  }
+
+  &__subtitle:hover {
+    color: black;
+  }
+
+  &__latest {
+    grid-area: news;
+  }
+}

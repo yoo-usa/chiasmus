@@ -1,0 +1,13 @@
+{{ loadCssComponent('all-news') }}
+
+<div class="all-news">
+{% for news in craft.entries.section('news').limit(10).all %}
+    <div class="all-news__story">
+        <h2 class="all-news__story-title">{{ news.title }}</h2>
+        <p>by {{ news.writer }}</p>
+        {{ news.newsBody }}
+    </div>
+
+    <hr>
+{% endfor %}
+</div>

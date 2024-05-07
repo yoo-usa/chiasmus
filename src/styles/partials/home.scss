@@ -17,5 +17,11 @@
     padding: 1rem 2rem;
     color: white;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__button:hover {
+    color: white;
+    background-color: #0c4a6e;
   }
 }

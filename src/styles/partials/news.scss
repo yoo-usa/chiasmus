@@ -1,0 +1,6 @@
+@use "sass:map";
+@use "../helpers/mixins";
+
+.news-preview-banner {
+  @include mixins.content-grid-full-block;
+}

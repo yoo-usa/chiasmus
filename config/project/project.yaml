@@ -1,4 +1,4 @@
-dateModified: 1715062730
+dateModified: 1715090601
 email:
   fromEmail: dev-test@yoo.digital
   fromName: alex-craftkit-project
@@ -47,7 +47,9 @@ meta:
     540d9651-70a9-4003-8899-65439a885384: 'Steps Content' # Steps Content
     0945c95a-991c-45a2-a334-783315082e98: 'Body Content' # Body Content
     992a490a-fba4-4f64-8dc5-3a3c992a1917: Homepage # Homepage
+    01133f4a-fbcf-4511-acdd-7c7a8a59ace1: 'All News' # All News
     08017f5e-acb6-444c-bfae-b669eecb8054: 'Style Description' # Style Description
+    8663e3f2-3ea2-4c93-9626-6d5d0a87766d: 'All News' # All News
     1622926a-7b7d-4ac2-86b3-bf22f2ccbf61: Default # Default
     a44e5ac3-c8e7-4152-9c69-8d62cdcde787: 'About Crafty Coffee' # About Crafty Coffee
     a21055b3-1c98-4507-ba44-ee2867963ede: 'Page Intro' # Page Intro

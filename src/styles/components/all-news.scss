@@ -1,0 +1,14 @@
+@use "sass:map";
+@use "../helpers/mixins";
+.all-news {
+  @include mixins.content-grid-content-block;
+
+  padding-inline: 10rem;
+
+  &__story {
+
+    &-title {
+      color: lightskyblue;
+    }
+  }
+}

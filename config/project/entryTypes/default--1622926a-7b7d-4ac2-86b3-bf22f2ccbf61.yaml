@@ -33,6 +33,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 20b9314a-0364-44c9-a77a-f14c79315411 # Banner Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7f73b564-201c-4733-9c71-21e6e9fd2a97
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: f1170bf8-158f-4ac9-a56c-ce4956a03b20 # Writer
             instructions: null
             label: null

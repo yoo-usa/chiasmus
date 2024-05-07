@@ -1,0 +1,18 @@
+{% extends '_layouts/base.twig' %}
+
+{% block content %}
+    {{ loadCssComponent('news', 'partials') }}
+    {% include '@craft-components/breadcrumbs.twig' with {
+        overwriteCss: true
+    } %}
+
+    <div class="news-preview-banner">
+        {% include '_components/preview-banner.twig' with {
+            title: 'Spilling the Beans',
+            intro: 'Coffee news from the shop and beyond',
+            img: entry.bannerImage.one().url
+        } %}
+    </div>
+
+    {% include '_components/all-news.twig' %}
+{% endblock %}

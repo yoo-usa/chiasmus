@@ -1,0 +1,18 @@
+{{ loadCssComponent('home-content') }}
+<div class="home-content">
+    <div class="home-content__favorite">
+        <h4>Favorite Drinks</h4>
+        {% for drink in craft.entries.section('drinks').limit(5).all %}
+            <a href="{{ drink.url }}" class="home-content__favorite-banner" style="background-image: url({{ drink.drinkImage.one().url }})">
+                <p class="home-content__favorite-text">{{ drink.title }}</p>
+            </a>
+        {% endfor %}
+    </div>
+    <div class="home-content__latest">
+        <h4>Latest Coffee News</h4>
+        {% for news in craft.entries.section('news').limit(8).all %}
+            <a href="{{ news.url }}" class="home-content__subtitle">{{ news.excerpt }} &raquo;</a>
+            <hr>
+        {% endfor %}
+    </div>
+</div>
