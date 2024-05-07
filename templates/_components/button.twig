@@ -1,7 +1,7 @@
 {{ loadCssComponent('button') }}
 {% if class is defined %}
-    <a class="button {{ class }}" href="{{ link }}">Make <i>{{ title }}</i> at Home</a>
+    <a class="button {{ class }}" href="{{ link }}">{{ title | raw }}</a>
 {% else %}
-    <a class="button" href="{{ link }}">Make <i>{{ title }}</i> at Home</a>
+    <a class="button" href="{{ link }}">{{ title | raw }}</a>
 {% endif %}
 

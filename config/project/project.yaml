@@ -1,9 +1,16 @@
-dateModified: 1714485120
+dateModified: 1715062730
 email:
   fromEmail: dev-test@yoo.digital
   fromName: alex-craftkit-project
   transportType: craft\mail\transportadapters\Sendmail
 fs:
+  coffeeShop:
+    hasUrls: true
+    name: 'Coffee Shop'
+    settings:
+      path: '@webroot/images/uploads/drinks'
+    type: craft\fs\Local
+    url: '@webr/images/uploads/drinks'
   drinks:
     hasUrls: true
     name: Drinks
@@ -11,28 +18,28 @@ fs:
       path: '@webroot/images/uploads/drinks'
     type: craft\fs\Local
     url: '@web/images/uploads/drinks'
-graphql:
-  publicToken:
-    enabled: false
-    expiryDate: null
 meta:
   __names__:
     0b88ecb2-3a82-4512-b091-3d3357ae96a5: 'Recipe Steps' # Recipe Steps
     0eebc6c7-2c2e-4125-9b71-083f11e1752f: Introduction # Introduction
     1ba53c97-c3fc-4c5e-bbc0-6b1c1ee672b9: 'Image Alt Text' # Image Alt Text
     1c0d27a8-0214-4e5e-b5bf-056229bec07a: 'Drink Style' # Drink Style
+    1d056e81-fed5-4961-987f-6dc1e2d46fb5: 'Public Schema' # Public Schema
     2d2c1d4f-b85a-42ad-9fbf-75ddaeb79052: 'Drink Recipe' # Drink Recipe
     3ad1ca16-929b-4a80-8c99-6b4060397459: News # News
     3f6cb7ef-41be-4cbf-9ed0-ab2bb69d5aed: Drink # Drink
-    3fe881b4-8fab-4a19-bd89-e3da8da552de: 'All Drinks' # All Drinks
     4eefd5ec-5b69-4e03-b47e-98bedb06c898: 'Tip Content' # Tip Content
-    7da5391e-c355-4735-9c88-f3ae06199c3e: 'All Drinks' # All Drinks
+    07a252a6-df96-4b03-b247-01289eba7e01: 'All Recipes' # All Recipes
+    8c1d350c-3400-4f32-a996-94c5bec04087: 'All Recipes' # All Recipes
+    9c3a2d0d-001e-4c0a-9927-6a785ea78d51: 'Coffee Shop' # Coffee Shop
+    20b9314a-0364-44c9-a77a-f14c79315411: 'Banner Image' # Banner Image
     25c23f10-9e6b-44df-a6d7-8a99ee9fceb6: alex-craftkit-project # alex-craftkit-project
     28b36b86-72f6-4b2c-a601-19815bd2f0e9: Drinks # Drinks
     29e446ac-2469-40bd-ab37-515ea72d24d1: Common # Common
     56cb24e9-9490-4041-b9d0-cd66d05df7db: 'News Body' # News Body
     58b93e3f-af7b-4c45-98af-80f323172f96: 'Image Caption' # Image Caption
     62f99a75-6423-46fc-88b4-9744492636ac: 'Page Copy' # Page Copy
+    87e217bf-9a39-4fd8-a65d-ad253be32916: 'All Drinks' # All Drinks
     96abb758-9f11-445b-b078-c0436d4c991d: Recipes # Recipes
     254e7272-8e43-44f0-8ff1-9c16eee00c4c: 'Recipe Copy' # Recipe Copy
     389fec98-5d8e-498c-acde-47dff8149620: 'Drink Styles' # Drink Styles
@@ -61,6 +68,7 @@ meta:
     e594e887-3561-4d97-bd94-7a9fa33edb04: Recipes # Recipes
     e74106f0-2b6a-4d6b-b3f9-b3956425511a: Excerpt # Excerpt
     eab6db22-4dbb-4597-bd2e-9cbe3b8ab25c: 'Image Quality' # Image Quality
+    ec1adb86-c0e0-4629-8efc-8ed2e00b5e09: 'All Drinks' # All Drinks
     ed6d4cf3-57d1-49c1-bcb6-76c31f219301: Drinks # Drinks
     f7e0d758-7654-42ff-8eb9-800e5901bc58: Homepage # Homepage
     f31ba73a-5791-434a-8bb7-e01852ecbf5f: 'Drink Image' # Drink Image

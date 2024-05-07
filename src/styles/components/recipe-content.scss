@@ -1,0 +1,20 @@
+.recipe-content {
+
+  &__title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  &__tip {
+    font-size: 1.25rem;
+    font-weight: lighter;
+    padding: 1rem;
+    background-color: rgb(172 172 144 / 30%);
+    border: 1px solid #acac90;
+  }
+
+  & hr {
+    margin-block: 3rem;
+  }
+}
+

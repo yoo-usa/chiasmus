@@ -1,0 +1,20 @@
+{{ loadCssComponent('coffee-table') }}
+
+<table class="coffee-table">
+    <thead>
+        <tr class="coffee-table__header">
+            <th>DRINK NAME</th>
+            <th>ADDED TO MENU ON</th>
+            <th>STYLE</th>
+        </tr>
+    </thead>
+    <tbody class="coffee-table__body">
+    {% for drink in craft.entries.section(section) %}
+        <tr>
+            <td><a class="coffee-table__link" href="{{ drink.url() }}">{{ drink.title }}</a></td>
+            <td>{{ drink.postDate | date("M Y") }}</td>
+            <td><a class="coffee-table__link" href="{{ drink.drinkStyle.one().url() }}">{{ drink.drinkStyle.one() }}</a></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

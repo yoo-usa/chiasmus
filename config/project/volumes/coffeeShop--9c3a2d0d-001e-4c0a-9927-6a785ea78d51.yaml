@@ -1,5 +1,5 @@
 fieldLayouts:
-  e302cf16-9e1b-44e3-a23b-31a3e694ed74:
+  9641016e-db8e-472c-ab07-90ab20bd34b3:
     tabs:
       -
         elementCondition: null
@@ -26,46 +26,43 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: f3c3038e-43b4-406f-820f-e2eecc39bdfa
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 69c09338-a53d-4872-bb7d-53bf1bf21a69
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: ae6395d0-c095-44f0-91b2-2ecf5d4bafb4 # Subtitle
+            fieldUid: 1ba53c97-c3fc-4c5e-bbc0-6b1c1ee672b9 # Image Alt Text
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 9ca2b499-a4af-46e6-863f-a04afe58a719
+            uid: 2363268f-760e-4237-b0dd-ab9586266b6f
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 20b9314a-0364-44c9-a77a-f14c79315411 # Banner Image
+            fieldUid: eab6db22-4dbb-4597-bd2e-9cbe3b8ab25c # Image Quality
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 06d72e0b-94b1-47ca-98b4-e59349286049
+            uid: 46a8ad88-0149-4e00-8c9c-16692fb97c3c
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: cc206b4f-726f-4669-9510-2db107bcea89
+        uid: 1b340820-8f42-49e7-9f58-94d022f8e960
         userCondition: null
-handle: homepage
-hasTitleField: false
-name: Homepage
-section: 992a490a-fba4-4f64-8dc5-3a3c992a1917 # Homepage
-showStatusField: true
-slugTranslationKeyFormat: null
-slugTranslationMethod: site
-sortOrder: 1
-titleFormat: '{section.name|raw}'
+fs: coffeeShop
+handle: coffeeShop
+name: 'Coffee Shop'
+sortOrder: 2
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+transformFs: coffeeShop
+transformSubpath: ''

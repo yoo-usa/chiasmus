@@ -1,0 +1,11 @@
+@use "sass:map";
+@use "../helpers/mixins";
+
+.recipe-preview-banner {
+  @include mixins.content-grid-full-block
+}
+
+.recipe-content {
+  @include mixins.content-grid-content-block;
+  padding-inline: 5vw;
+}

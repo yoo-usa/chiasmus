@@ -1,17 +1,17 @@
 @use "sass:map";
 @use "../helpers/mixins";
 
-.drink-preview-banner {
-  @include mixins.content-grid-full-block
-}
-
 .preview-banner {
-  text-align: center;
-  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+  min-height: 30vh;
   color: white;
+  text-align: center;
 
-  background-position: top center;
   background-repeat: no-repeat;
+  background-position: top center;
   background-size: cover;
 
   &__title {

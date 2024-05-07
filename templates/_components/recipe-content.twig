@@ -1,0 +1,54 @@
+{{ loadCssComponent('coffee-table') }}
+{{ loadCssComponent('recipe-content') }}
+
+{% from "@craft-components/img.twig" import img %}
+
+<div class="recipe-content">
+    <p class="recipe-content__title"><i>{{ intro }}</i></p>
+    {% for block in content %}
+        {% switch block.type %}
+            {% case 'recipeImage' %}
+                <div class="recipe-content__image">
+                    {% set image = block.image.one() %}
+
+                    {{ img(image, null, null, 16/9) }}
+
+                    {% if block.imageCaption %}
+                        <p><small>{{ block.imageCaption }}</small></p>
+                    {% endif %}
+                </div>
+            {% case 'recipeCopy' %}
+                {{ block.bodyContent }}
+            {% case 'recipeIngredients' %}
+                <table class="recipe-content__ingredients coffee-table">
+                    <thead class="coffee-table__header">
+                        <th>Amount</th>
+                        <th>Ingredient</th>
+                    </thead>
+                    <tbody class="coffee-table__body">
+                        {% for row in block.ingredient %}
+                            <tr>
+                                <td>{{ row.amount }}</td>
+                                <td>{{ row.ingredient }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% case 'recipeSteps' %}
+                <hr>
+
+                <div class="recipe-content__steps">
+                    {{ block.stepsTitle }}
+                    <ol>
+                        {% for step in block.stepsContent %}
+                            <li>{{ step.stepInstructions }}</li>
+                        {% endfor %}
+                    </ol>
+                </div>
+            {% case 'recipeTip' %}
+                <div class="recipe-content__tip">
+                    {{ block.tipContent }}
+                </div>
+        {% endswitch %}
+    {% endfor %}
+</div>

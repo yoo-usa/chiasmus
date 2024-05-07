@@ -4,6 +4,35 @@
 {% block jumpToTop %}{% endblock %}
 
 {% block content %}
-    {% include '_components/grid-example.twig' %}
+    {{ loadCssComponent('home', 'partials') }}
+
+    {% include '@craft-components/breadcrumbs.twig' with {
+        overwriteCss: true
+    } %}
+
+    <div class="home-preview-banner">
+        {% embed '_components/preview-banner.twig' with {
+            intro: entry.subtitle,
+            img: entry.bannerImage.one().url
+        } %}
+            {% block title %}
+                <h1><span class="home-preview-banner__title">Crafty</span> COFFEE</h1>
+                <p>{{ intro }}</p>
+                <div class="home-preview-banner__buttons">
+                    {% include '_components/button.twig' with {
+                        title: 'See <i>Our Drinks</i>',
+                        link: '/drinks',
+                        class: 'home-preview-banner__button'
+                    } %}
+                    {% include '_components/button.twig' with {
+                        title: 'Make <i>Our Drinks</i>',
+                        link: '/recipes',
+                        class: 'home-preview-banner__button'
+                    } %}
+                </div>
+            {% endblock %}
+        {% endembed %}
+    </div>
+    {% include '_components/home-content.twig' %}
 {% endblock %}
 

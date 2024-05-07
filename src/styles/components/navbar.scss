@@ -33,4 +33,9 @@
   &__desktop-list li:hover {
     background-color: rgb(32 32 32);
   }
+
+  & a {
+    color: white;
+    text-decoration: none;
+  }
 }

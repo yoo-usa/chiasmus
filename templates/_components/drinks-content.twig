@@ -1,0 +1,9 @@
+{{ loadCssComponent('drinks-content') }}
+
+<div class="drinks-content">
+    <p>{{ intro }}</p>
+
+    {% include '_components/coffee-table.twig' with {
+        section: 'drinks'
+    } %}
+</div>

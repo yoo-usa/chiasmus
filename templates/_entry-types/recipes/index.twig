@@ -1,12 +1,12 @@
 {% extends "_layouts/base.twig" %}
 {% block content %}
-    {{ loadCssComponent('drink', 'partials') }}
+    {{ loadCssComponent('recipe', 'partials') }}
 
     {% include "@craft-components/breadcrumbs.twig" with {
         overwriteCss: true
     } %}
 
-    <div class="drink-preview-banner">
+    <div class="recipe-preview-banner">
         {% include '_components/preview-banner.twig' with {
             title: entry.title,
             intro: entry.introduction,
@@ -14,7 +14,7 @@
         } %}
     </div>
 
-    {% include '_components/drinks-content.twig' with {
+    {% include '_components/recipes-content.twig' with {
         intro: entry.subtitle
     } %}
 

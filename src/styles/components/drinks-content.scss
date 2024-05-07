@@ -1,0 +1,8 @@
+@use "sass:map";
+@use "../helpers/mixins";
+
+.drinks-content {
+  @include mixins.content-grid-content-block;
+
+  padding-inline: 15vw;
+}

@@ -19,7 +19,7 @@
     </div>
     {% include "_components/button.twig" with {
         link: entry.drinkRecipe.one().url,
-        title: entry.title,
+        title: "Make <i>" ~ entry.title ~ "</i> at Home",
         class: "drink-content__button"
     }%}
 </div>

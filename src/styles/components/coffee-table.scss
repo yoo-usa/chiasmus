@@ -1,0 +1,23 @@
+.coffee-table {
+  width: 100%;
+  border-collapse: collapse;
+
+
+  &__header {
+    color: white;
+    background-color: #7c7c60;
+  }
+  & td, th {
+    border: 1px solid #acac90;
+    padding: 5px;
+  }
+
+  &__link {
+    color: #408DD2;
+    text-decoration: none;
+  }
+
+  &__body tr:nth-child(2n + 1) {
+    background-color: rgb(172 172 144 / 30%);
+  }
+}

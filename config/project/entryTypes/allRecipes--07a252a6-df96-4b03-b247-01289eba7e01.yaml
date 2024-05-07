@@ -1,5 +1,5 @@
 fieldLayouts:
-  ae97c323-a728-4943-939d-a51b9c501d43:
+  453071e4-17ba-4548-97f5-6d5806387d83:
     tabs:
       -
         elementCondition: null
@@ -27,7 +27,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: ef9a43f3-2221-4e83-b231-a1b9a794737f
+            uid: eb7e4e49-ffa5-4695-904d-c35e0b7ad57e
             userCondition: null
             warning: null
             width: 100
@@ -39,21 +39,33 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 66a75b3d-b152-4291-a2bb-5fe895c6d850
+            uid: b8f6010c-2f22-4685-91d3-14d846ff42e1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f31ba73a-5791-434a-8bb7-e01852ecbf5f # Drink Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4b0c0bc2-245a-4fae-baa7-f3d19e7b88e7
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 9e225e1e-7ce3-4a00-af54-2faabd76f3cc
+        uid: 3198d0f6-49b3-44d9-abd4-d142d7fd00cb
         userCondition: null
-handle: allDrinks
-hasTitleField: true
-name: 'All Drinks'
-section: 7da5391e-c355-4735-9c88-f3ae06199c3e # All Drinks
+handle: allRecipes
+hasTitleField: false
+name: 'All Recipes'
+section: 8c1d350c-3400-4f32-a996-94c5bec04087 # All Recipes
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
 sortOrder: 1
-titleFormat: null
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

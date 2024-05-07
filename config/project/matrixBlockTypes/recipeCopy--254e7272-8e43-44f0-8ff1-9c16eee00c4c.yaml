@@ -23,47 +23,32 @@ fieldLayouts:
 fields:
   0945c95a-991c-45a2-a334-783315082e98: # Body Content
     columnSuffix: hwialvlt
-    contentColumnType: string
+    contentColumnType: text
     fieldGroup: null
     handle: bodyContent
     instructions: null
     name: 'Body Content'
     searchable: false
     settings:
-      errorMessage: 'Unable to find component class ''craft\ckeditor\Field''.'
-      expectedType: craft\ckeditor\Field
-      settings:
-        __assoc__:
-          0:
-            - availableTransforms
-            - ''
-          1:
-            - availableVolumes
-            - '*'
-          2:
-            - ckeConfig
-            - cde5ac79-3ee7-49b3-8aed-86673232cce4 # Simple
-          3:
-            - columnType
-            - text
-          5:
-            - enableSourceEditingForNonAdmins
-            - false
-          7:
-            - purifyHtml
-            - true
-          8:
-            - showUnpermittedFiles
-            - false
-          9:
-            - showUnpermittedVolumes
-            - false
-          10:
-            - showWordCount
-            - false
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: none
-    type: craft\fields\MissingField
+    type: craft\redactor\Field
 handle: recipeCopy
 name: 'Recipe Copy'
 sortOrder: 2

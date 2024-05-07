@@ -1,0 +1,25 @@
+{% extends "_layouts/base.twig" %}
+
+{% block content %}
+    {{ loadCssComponent('recipe', 'partials') }}
+
+    {% include "@craft-components/breadcrumbs.twig" with {
+        overwriteCss: true
+    } %}
+
+    <div class="recipe-preview-banner">
+        {% include '_components/preview-banner.twig' with {
+            title: entry.title,
+            intro: entry.drinkStyle.one(),
+            img: entry.bannerImage.one().url
+        } %}
+    </div>
+
+    {% include '_components/recipe-content.twig' with {
+        intro: entry.introduction,
+        content: entry.recipeContents,
+        category: entry.drinkStyle
+
+    } %}
+
+{% endblock %}

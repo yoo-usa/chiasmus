@@ -1,0 +1,21 @@
+@use "sass:map";
+@use "../helpers/mixins";
+
+.home-preview-banner {
+  @include mixins.content-grid-full-block;
+
+  &__title {
+    font-family: Pacifico, Helvetica, sans-serif;
+    font-size: clamp(2rem, 4rem + 5vh, 8rem);
+  }
+
+  &__buttons {
+    margin-block: 1rem 2rem;
+  }
+
+  &__button {
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+  }
+}
